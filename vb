@@ -29,15 +29,15 @@ Public Class create_reg
         
         Else
             'add new records
-            Dim savenew As String = "INSERT INTO [tblaccessinfo]  (Uname,Pword,Fname,Lname,EMailAdd,HOMEICAO,emailnote) values('" &
-        new_username.Text & "','" &
+            Dim savenew As String = "INSERT INTO [tblaccessinfo]  (Uname,Pword,Fname,Lname,EMailAdd,HOMEICAO,emailnote,lkey) values('" &
+       new_username.Text & "','" &
         new_password.Text & "','" &
         New_fname.Text & "','" &
         new_lname.Text & "','" &
         EMailAdd.Text & "','" &
         HOMEICAO.Text & "','" &
-        emailnote.Text & "');"
-
+        emailnote.Text & "','" &
+        lkeyTextBox1.Text & "');"
             Dim cmd As New OleDbCommand
 
             With cmd
@@ -68,4 +68,4 @@ Public Class create_reg
 
 
         End If
-End Sub
+    End Sub
