@@ -47,10 +47,9 @@ Public Class create_reg
             End With
             MessageBox.Show("Welcome on board ")
 
-           Dim mail As New MailMessage
-        mail.Subject = "Welcome on board"
-        ' mail.To.Add("Wavuserhelpdesk@hotmail.com")
-
+            conn.Close()
+            Dim mail As New MailMessage
+            mail.Subject = "Welcome on board"
             Dim body As String = String.Empty
             Dim reader As StreamReader = New StreamReader("C:\VisStudioProj\wav login Desktop App23\wav login Desktop App23\email_template.htm")
             Dim smtp As New SmtpClient("smtp-mail.outlook.com")
