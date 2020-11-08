@@ -60,7 +60,7 @@ Public Class create_reg
             mail.IsBodyHtml = True
 
             smtp.EnableSsl = True
-            smtp.Credentials = New System.Net.NetworkCredential("Wavuserhelpdesk@hotmail.com", "Spongebob97")
+            smtp.Credentials = New System.Net.NetworkCredential("Wavuserhelpdesk@hotmail.com", "!Spongebob18")
             smtp.Port = "587"
             'smtp.Port = "25"
             smtp.Send(mail)
