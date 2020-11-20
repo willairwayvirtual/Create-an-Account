@@ -36,7 +36,7 @@ Partial Class Create_an_Accountaspx
         ' mail.To.Add("Wavuserhelpdesk@hotmail.com")
 
         Dim body As String = String.Empty
-        Dim reader As StreamReader = New StreamReader("C:\VisStudioProj\wav web\willairwayvirtual34\willairwayvirtual34\email templates\signup.html")
+        Dim reader As StreamReader = New StreamReader("C:\VisStudioProj\wav web\willairwayvirtual34\willairwayvirtual34\email templates\signup1.html")
         Dim smtp As New SmtpClient("smtp-mail.outlook.com")
 
         mail.To.Add(TextBox4_email.Text)
