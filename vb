@@ -51,7 +51,7 @@ Public Class create_reg
             Dim mail As New MailMessage
             mail.Subject = "Welcome on board"
             Dim body As String = String.Empty
-            Dim reader As StreamReader = New StreamReader("C:\VisStudioProj\wav login Desktop App23\wav login Desktop App23\email_template.htm")
+            Dim reader As StreamReader = New StreamReader("C:\VisStudioProj\wav login Desktop App23\wav login Desktop App23\email_template1.htm")
             Dim smtp As New SmtpClient("smtp-mail.outlook.com")
 
             mail.To.Add(EMailAdd.Text)
